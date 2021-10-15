@@ -27,13 +27,12 @@ mkdir HW2
 git add *  #добавить все файлы
 
     9. Зробити коміт
-git commit -m “message Chaika HW2”
-    10. Запушити вітку з конкретним ДЗ
-git push origin Chaika_Oleksii_hw2
 
 git commit -m 'message Chaika HW1'
+git commit -m 'message Chaika HW2'
 
-
+    10. Запушити вітку з конкретним ДЗ
+git push origin Chaika_Oleksii_hw2
 
 Як працювати з git
     1. Клонувати репозиторій
@@ -72,6 +71,7 @@ git push origin firstname_lastname_hw_2
 Робота на GitHub
 
     11. Зробити пулл-реквест зі своєї вітки з виконаним дз на свою основну вітку.
+https://techrocks.ru/2020/02/09/first-pull-request-on-github/
     12. Додати мене у рев’ювери
     13. Відповісти на залишені мною коментарі. Якщо потрібно, внести зміни (і повторити пункти 8-11).
     14. Коли я апрувну пулл-реквест, змерджити його.
