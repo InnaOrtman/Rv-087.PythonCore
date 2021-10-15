@@ -1,6 +1,5 @@
 #       Task 1
 #   Define variables a and b. Read values a and b from console and calculate: 
-#   Определите переменные a и b. Посчитайте значения a и b в консоли :
 #    a + b 
 #    a - b 
 #    a * b 
