@@ -1,0 +1,96 @@
+git --version
+
+git config --global --list
+git config --local
+
+git clone https://github.com/katemalash/Rv-087.PythonCore.git
+
+
+git checkout -b main_Oleksii_Chaika
+
+не выполнил
+
+git push origin main_Oleksii_Chaika
+
+git checkout -b Chaika_Oleksii_hw2
+
+mkdir Chaika
+
+cd Chaika
+
+#6
+mkdir HW1
+mkdir HW2
+
+    8. Застежити усі файли 
+##git add <file_name>
+git add *  #добавить все файлы
+
+    9. Зробити коміт
+
+git commit -m 'message Chaika HW1'
+git commit -m 'message Chaika HW2'
+
+    10. Запушити вітку з конкретним ДЗ
+git push origin Chaika_Oleksii_hw2
+
+Як працювати з git
+    1. Клонувати репозиторій
+git clone https://github.com/katemalash/Rv-087.PythonCore.git
+
+    2. Створити вітку (від main) з такою назвою, як main_Ваше прізвище_ім’я
+git checkout -b main_firstname_lastname
+
+    3. Запушити створену вітку на GitHub
+git push origin main_firstname_lastname
+
+    4. Від своєї вітки створити вітку прізвище_ім’я_hw_2
+git checkout -b firstname_lastname_hw2
+
+    5. Створити папку для виконання усіх дз і назвати своїм прізвищем
+mkdir lastname
+
+    6. У цій папці створити папку HW2
+cd lastname
+mkdir HW2
+
+    7. У неї додати файли з попереднім виконаним ДЗ
+
+Далі алгоритм роботи власне з git
+
+    8. Застежити усі файли 
+git add <file_name>git 
+
+git reset HEAD <file>…​ для исключения из индекса. 
+
+    9. Зробити коміт
+git commit -m “message”
+    10. Запушити вітку з конкретним ДЗ
+git push origin firstname_lastname_hw_2
+
+Робота на GitHub
+
+    11. Зробити пулл-реквест зі своєї вітки з виконаним дз на свою основну вітку.
+https://techrocks.ru/2020/02/09/first-pull-request-on-github/
+    12. Додати мене у рев’ювери
+    13. Відповісти на залишені мною коментарі. Якщо потрібно, внести зміни (і повторити пункти 8-11).
+    14. Коли я апрувну пулл-реквест, змерджити його.
+
+Робота локально
+    15. Перейти на вітку зі своїм прізвищем
+#git checkout main_firstname_lastname
+
+git checkout main_Oleksii_Chaika
+
+    16. Зпулити таку ж вітку віддалену
+#git pull origin main_firstname_lastname
+
+git pull origin main_Oleksii_Chaika
+
+    17. Створити нову вітку прізвище_ім’я_hw_3
+git checkout -b firstname_lastname_hw3
+
+    18. Створити папку HW3, у яку додавати файли з виконаною hw3.
+mkdir HW3
+
+    19. Повторювати кроки 8-14.
