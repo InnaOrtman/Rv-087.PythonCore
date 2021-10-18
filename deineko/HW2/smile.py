@@ -1,0 +1,8 @@
+print("00           00")
+print("00           00")
+print("             ")
+print("             ")
+print("             ")
+print("0             0")
+print(" 0           0 ")
+print("   000000000")
