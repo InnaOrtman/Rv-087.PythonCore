@@ -6,6 +6,7 @@
 # Task 4:
 # Calculate the area and perimeter of the circle over an entered radius.
 #
+# Calculate the area and perimeter of the Triangle (Three sides)
 # TODO:
 #   Make properties for the methods
 
@@ -54,15 +55,33 @@ class Circle(AbstaractGeomFigure):
         return 2 * self.radius * math.pi
 
 
-rectangle = Rectangle(7, 5)
-square = Square(5)
-circle = Circle(6)
+class TriangleThreeSides(AbstaractGeomFigure):
+    def __init__(self, sideAB, sideBC, sideAC):
+        self.sideAB = sideAB
+        self.sideBC = sideBC
+        self.sideAC = sideAC
 
-print("area of rectangle: ", rectangle.area())
-print("perimeter of rectangle: ", rectangle.perimeter())
-print()
-print("area of rectangle: ", square.area())
-print("perimeter of square: ", square.perimeter())
-print()
-print("area of circle: ", circle.area())
-print("perimeter of circle: ", circle.perimeter())
+    def area(self):
+        p = self.perimeter() / 2
+        return math.sqrt(p
+                         * (p - self.sideAB)
+                         * (p - self.sideBC)
+                         * (p - self.sideAC))
+
+    def perimeter(self):
+        return self.sideAB + self.sideBC + self.sideAC
+
+
+if __name__ == "__main__":
+    rectangle = Rectangle(7, 5)
+    square = Square(5)
+    circle = Circle(6)
+
+    print("area of rectangle: ", rectangle.area())
+    print("perimeter of rectangle: ", rectangle.perimeter())
+    print()
+    print("area of rectangle: ", square.area())
+    print("perimeter of square: ", square.perimeter())
+    print()
+    print("area of circle: ", circle.area())
+    print("perimeter of circle: ", circle.perimeter())
