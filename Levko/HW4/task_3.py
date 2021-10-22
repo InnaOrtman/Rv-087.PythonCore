@@ -1,14 +1,21 @@
 # task_3
 
-qustion = int(input("Enter the number from -99 to 99, please: "))
+question = int(input("Enter the number, please: "))
 
-if 10 > qustion > 0:
-    print("positive; one-digit")
-elif -10 <= qustion < 0:
-    print("negative; one-digit")
-elif 10 <= qustion > 0:
-    print("positive; two-digit")
-elif -10 > qustion < 0:
-    print("negative; two-digit")
+if question > 0:
+    print("It`s positive!")
+elif question < 0:
+    print("It`s negative!")
 else:
-    print("Zero is neither positive nor negative number!")
+    print("Zero is neither positive nor negative")
+
+if 0 < question < 10:
+    print("It`s one-digit!")
+elif question > 10:
+    print("It`s two or more digit:)!")
+
+if 0 > question <= -10:
+    print("It`s two or more digit:)!")
+elif 0 > question > -10:
+    print("It`s one-digit!")
+
