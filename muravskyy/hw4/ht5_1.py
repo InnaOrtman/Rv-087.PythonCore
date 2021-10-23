@@ -10,5 +10,4 @@ for x in bank:
     monye = monye - (quantity*x)
     a = {x:quantity}     
     print("{value[0]} \t {value[1]} bills".format(value = [x, a[x]]))
-   
-    
+       
