@@ -1,8 +1,0 @@
-a = int(input('vvedy  a' ))
-b = int(input('vvedy  b' ))
-print(a)
-print(b)
-print(a+b)
-print(a-b)
-print(a*b)
-print(a/b)
