@@ -10,5 +10,4 @@ elif num > 0:
 else:
     digits = '1'
     posneg = ''
-
 print(f'Is {posneg} {digits}-digit')

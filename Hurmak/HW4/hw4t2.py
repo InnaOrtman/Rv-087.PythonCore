@@ -6,11 +6,12 @@ if shape == 'rectangle':
 elif shape == 'triangle':
     side1 = float(input('Enter side 1 of triangle:'))
     side2 = float(input('Enter side 2 of triangle:'))
-    area = side1 * side2 / 2
+    side3 = float(input('Enter side 3 of triangle:'))
+    p = (side1 + side2 + side3)/2
+    area = (p*(p - side1)*(p - side2)*(p - side3))**1/2
 elif shape == 'circle':
     radius = float(input('Enter radius:'))
     area = 3.1415 * radius ** 2
 else:
     area = False
-
 print(f'Area of {shape} is equal to {area}' if area else 'wrong shape entered ')
