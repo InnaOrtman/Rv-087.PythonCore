@@ -1,5 +1,4 @@
 import random
-from datetime import datetime
 
 number = random.randint(1, 100)
 print(number)
