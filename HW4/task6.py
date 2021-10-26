@@ -1,4 +1,4 @@
-CARRIAGE_SEATS_MAX = 52
+CARRIAGE_SEATS_MAX = 54
 
 seat_number = int(input(f"Please enter value from 1 to {CARRIAGE_SEATS_MAX}.\n"))
 

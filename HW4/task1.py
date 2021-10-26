@@ -5,7 +5,7 @@ if year <= 0:
 
 if year % 400 == 0:
     print(f"Year {year} is intercalary")
-elif year % 4 == 0:
+elif year % 4 == 0 and year % 100 != 0:
     print(f"Year {year} in intercalary")
 else:
     print(f"Year {year} is not intercalary")
