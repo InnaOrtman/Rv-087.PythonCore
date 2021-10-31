@@ -3,10 +3,9 @@
 
 print("Task 3")
 
-a = int(input("input width: "))
-b = int(input("input height: "))
+a = float(input("input width: "))
+b = float(input("input height: "))
+
 print(" ")
-print(((a + b)*2), " периметр" )
+print(((a+b) * 2), " периметр" )
 print((a * b), " площадь" )
-
-
