@@ -1,10 +1,9 @@
 positive = 0
 negative = 0
+number = 0
 
-while True:
+while number != 0:
     number = int(input("Please enter number.\n"))
-    if number == 0:
-        break
     if number > 0:
         positive += 1
     else:
