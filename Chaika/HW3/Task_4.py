@@ -2,10 +2,9 @@
 # Задача 4
 # Вычислите площадь и периметр круга по введенному радиусу.
 print("Task 4")
-r = int(input("input radius: "))
+r = float(input("input radius: "))
 p = 3.14
 
 print(" ")
 print("%.2f" % (2 * r * p), "Периметр круга")
 print("%.2f" % (r**2 * p), "Площадь круга")
-
