@@ -8,6 +8,8 @@
 
 
 def is_number(variable: str) -> bool:
+    if variable == ".":
+        return False
     count_dot = 0
     if variable[-1:] == ".":
         count_dot += 1
