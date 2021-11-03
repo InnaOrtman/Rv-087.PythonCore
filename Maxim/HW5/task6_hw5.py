@@ -20,7 +20,6 @@ while not quite_:
     else:
         listNumbers.append(number)
 
-
 lenListNum = len(listNumbers)
 count = 0
 for i in range(lenListNum):
