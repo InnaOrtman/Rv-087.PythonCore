@@ -1,4 +1,4 @@
-entry_tuple = ("A", "B", "C", "D", "E", 1, 2, 3, 4, 5, "\u0394")
+entry_tuple = ("A", "B", "C", "D", "E", 1, 2, 3, 4, 5, "\u0394", "\U0001F600")
 
 print(entry_tuple)
 
