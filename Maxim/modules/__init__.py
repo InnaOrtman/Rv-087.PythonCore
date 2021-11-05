@@ -1,1 +1,1 @@
-__all__ = ["mynum", ]
+__all__ = ["mynum", "matrix", "checkInput"]
