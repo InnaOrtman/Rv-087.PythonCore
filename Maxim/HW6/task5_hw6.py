@@ -4,6 +4,7 @@
 
 import string
 
+
 lstSpec = (list(string.punctuation)
            + [r"\n", r"\b", r"\f", r"\r", r"\t", r"\v", r"\a",
               r"\N", r"\u", r"\U", r"\x", r"\o", r"\0"])
@@ -16,10 +17,11 @@ someTuple = (
 userInput = input(r"Enter a number, letter or special character: ")
 found = False
 print(someTuple)
+
 for i in range(len(someTuple)):
-    for j in range(len(someTuple[i])):
-        if someTuple[i][j] == userInput:
-            print(f"Entry index: [{i}][{j}]")
-            found = True
+    if userInput in someTuple[i]:
+        print(f"Entry index: [{i}][{someTuple[i].index(userInput)}]")
+        found = True
+        break
 if not found:
     print(f"The element {userInput} not found")
