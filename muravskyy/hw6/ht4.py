@@ -1,0 +1,5 @@
+myTuple = (1 , 2, 3, 'a', 'v', '+','-')
+number = tuple([x for x in myTuple if str(x).isnumeric()])
+letter = tuple([x for x in myTuple if str(x).isalpha()])
+etc = tuple([x for x in myTuple if not str(x).isnumeric() and not str(x).isalpha()])
+print(f'{number = }\n{letter = }\n{etc = }')
