@@ -10,7 +10,9 @@ lstValues = [input("Enter the number of rows: "),
              input("Enter the number of cols: ")]
 
 if checkInputPosNat(lstValues):
-    matrix = generateMatrix(int(lstValues[0]), int(lstValues[1]))  # to ask Kate
+    lstValues = list(map(int, lstValues))
+    matrix = generateMatrix(*lstValues)
+    # matrix = generateMatrix(int(lstValues[0]), int(lstValues[1]))
 
     output2DMatrix(matrix)
 
@@ -24,5 +26,10 @@ if checkInputPosNat(lstValues):
             elif minNum > matrix[j][i]:
                 minNum = matrix[j][i]
         lstMinInCols.append(minNum)
-    print(lstMinInCols)
+
+    # print(lstMinInCols)
+    for i in range(len(lstMinInCols)):
+        print(f"{lstMinInCols[i]:^7}", end="")
+    print()
+
     print(f"Maximum element among the minimum: {max(lstMinInCols)}")
