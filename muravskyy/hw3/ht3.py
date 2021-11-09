@@ -1,5 +1,0 @@
-width = float(input("enter the width\n"))
-height = float(input("enter the height\n"))
-area = round(width * height, 4)
-perimeter = round((width + height) * 2, 4)
-print("The area and perimeter of the rectangle are\n",area," and ",perimeter)
