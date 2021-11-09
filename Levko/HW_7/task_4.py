@@ -1,7 +1,7 @@
 # task_4
 
-wordList = "My name is Inna Inna"
-x = wordList.split()
+text = input("Enter the sentence, please:\n").lower()
+x = text.split()
 
 y = dict()
 for i in x:
