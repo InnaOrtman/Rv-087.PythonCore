@@ -13,11 +13,12 @@ lstValues = [input("Enter the number of rows: "),
              input("Enter the number of cols: ")]
 
 if checkInputPosNat(lstValues):
-    matrix = generateMatrix(int(lstValues[0]), int(lstValues[1]))  # to ask Kate
+    [*arr] = map(int, lstValues)
+    matrix = generateMatrix(*arr)
+    # matrix = generateMatrix(int(lstValues[0]), int(lstValues[1]))
 
 # Output of matrix without changes
     output2DMatrix(matrix)
-    # print("=" * int(lstValues[1])*5)
 
 # Changes matrix in cols
     matrixChanged = []
