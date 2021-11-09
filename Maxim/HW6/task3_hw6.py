@@ -13,7 +13,6 @@ if checkInputPosNat(lstValues):
     matrix = generateMatrix(int(lstValues[0]), int(lstValues[1]))  # to ask Kate
 
     output2DMatrix(matrix)
-    print("=" * int(lstValues[1])*5)
 
     # minimum elements in cols
     lstMinInCols = []

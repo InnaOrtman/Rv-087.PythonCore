@@ -17,7 +17,7 @@ if checkInputPosNat(lstValues):
 
 # Output of matrix without changes
     output2DMatrix(matrix)
-    print("=" * int(lstValues[1])*5)
+    # print("=" * int(lstValues[1])*5)
 
 # Changes matrix in cols
     matrixChanged = []
@@ -29,7 +29,7 @@ if checkInputPosNat(lstValues):
         matrixChanged[i].append(countInCols)
         countInCols = 0
 
-# revers matrix and calculate the sum
+# count sum of values in cols and create tempList
     countInRows = 0
     tempList = []
     for i in range(len(matrix[0]) - 1):

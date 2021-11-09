@@ -9,14 +9,13 @@ someTuple = ("f", 1, 33, "G", "/", 0.2, "/n",
              "FG", ".", 55, "//", 2, "'", "Gs")
 lst1, lst2, lst3 = [], [], []
 
-pat = re.compile(r'\d')
-pat2 = re.compile(r'^[a-z]|^[A-z]')
-pat3 = re.compile(r'^[a-z]|^[A-z]')
+pat1 = re.compile(r'\d')
+pat2 = re.compile(r'^[A-z]')
 
 for i in someTuple:
-    res = pat.findall(str(i))
+    res1 = pat1.findall(str(i))
     res2 = pat2.findall((str(i)))
-    if res:
+    if res1:
         lst1.append(i)
     elif res2:
         lst2.append(i)
