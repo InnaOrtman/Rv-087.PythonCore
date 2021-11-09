@@ -21,4 +21,5 @@ for i in range(len(matrix)):
 for i in matrix:
     print(i)
 print(minimums)
+print(max(minimums))
 
