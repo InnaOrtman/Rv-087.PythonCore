@@ -38,6 +38,7 @@ def is_positive_number(variable: str) -> bool:
         return False
     else:
         return True
+    return False
     
     
 def is_fraction_in_number(variable: str) -> bool:
