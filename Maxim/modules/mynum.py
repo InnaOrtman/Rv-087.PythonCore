@@ -2,7 +2,7 @@
 # is_number
 # is_positive_number
 # is_fraction_in_number
-# is_positive_natural
+# is_positive_integer
 # if_number_to_float
 # if_int_to_int
 
@@ -48,7 +48,7 @@ def is_fraction_in_number(variable: str) -> bool:
     return False
 
 
-def is_positive_natural(variable: str) -> bool:
+def is_positive_integer(variable: str) -> bool:
     if variable[0:1] == "-":
         return False
     for i in range(len(variable)):

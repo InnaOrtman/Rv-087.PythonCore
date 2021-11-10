@@ -6,7 +6,7 @@
 # guessed for 10 attempts, then display the guessed number.
 
 import random
-from mynum import is_positive_natural
+from mynum import is_positive_integer
 
 
 hiddenNumber = random.randrange(0, 101)
@@ -17,7 +17,7 @@ print("Guess the hidden number from 0 to 100. You have 10 attempts.")
 while i < 11:
     guess = input(f"Enter the number. Attempt {i}/10: ")
 
-    if not is_positive_natural(guess):
+    if not is_positive_integer(guess):
         print("You enter not a number. You attempt won't be count.")
         continue
     elif int(guess) != hiddenNumber:

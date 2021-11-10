@@ -6,7 +6,7 @@
 # returns the amount that will be in the user's account.
 
 from mynum import if_int_to_int
-from mynum import is_positive_natural
+from mynum import is_positive_integer
 from mynum import is_positive_number
 
 
@@ -14,8 +14,8 @@ def deposit(money: float,
             years: [int],
             percent: int = 10) -> [int, float]:
     if not is_positive_number(str(money)) \
-            or not is_positive_natural(str(years)) \
-            or not is_positive_natural(str(percent)):
+            or not is_positive_integer(str(years)) \
+            or not is_positive_integer(str(percent)):
         return "You entered incorrect data"
 
     def calc(money_=money, years_=years, percent_=percent):

@@ -4,7 +4,7 @@
 # TODO: make a better output
 
 import parrPathApp
-from mynum import is_positive_natural
+from mynum import is_positive_integer
 from mynum import if_int_to_int
 
 
@@ -18,7 +18,7 @@ def main():
                     "1": 0}
 
     money = input("Enter amount of money: ")
-    if not is_positive_natural(money):
+    if not is_positive_integer(money):
         print("You entered not a value of money or "
               "not integer amount of money")
         return -1
