@@ -54,8 +54,7 @@ def dateFunc(date: list) -> bool:
                 11: 30,
                 12: 31}
 
-    getDate = date
-    day, month, year = getDate
+    day, month, year = date
 
     if year < 1583:
         if month in dictYear and day <= dictYear[month]:
