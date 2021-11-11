@@ -19,15 +19,12 @@ def deposit(money: float,
         return "You entered incorrect data"
 
     def calc(money_=money, years_=years, percent_=percent):
-        allMoney = money_
-        res = 0
-        res += allMoney / 100 * percent_
-        allMoney += res
+        money_ = money_ / 100 * percent_ + money_
         years_ -= 1
         if years_ == 0:
-            return allMoney
+            return money_
         else:
-            return calc(money_=allMoney, years_=years_, percent_=percent)
+            return calc(money_=money_, years_=years_, percent_=percent)
 
     return if_int_to_int(calc())
 
