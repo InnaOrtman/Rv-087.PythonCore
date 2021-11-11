@@ -14,12 +14,12 @@ def function(x, y, z):
         r = x - y
         return r
     else:
-        print("Unknown operation" )
+        return "Unknown operation"
 
 
 print(function(4, 2, "*"))
 print(function(4, 2, "/"))
 print(function(4, 2, "+"))
-print(function(4, 2, "-"))
+print(function(4, 2, "%"))
 
 
