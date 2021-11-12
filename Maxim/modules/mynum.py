@@ -29,6 +29,8 @@ def is_number(variable: str) -> bool:
 
 
 def is_positive_number(variable: str) -> bool:
+    if not is_number(variable):
+        return False
     if len(variable) == 2:
         if variable[0:1] == "-" and variable[1:] == "0":
             return True

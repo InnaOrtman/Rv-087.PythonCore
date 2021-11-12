@@ -8,17 +8,17 @@
 from mynum import if_int_to_int
 from mynum import is_positive_integer
 from mynum import is_positive_number
+# from mynum import is_number
 
 
-def deposit(money: float,
-            years: [int],
-            percent: int = 10) -> [int, float]:
+def deposit(money: str,
+            years: str,
+            percent: float = 10) -> [int, float]:
     if not is_positive_number(str(money)) \
-            or not is_positive_integer(str(years)) \
-            or not is_positive_integer(str(percent)):
+            or not is_positive_integer(str(years)):
         return "You entered incorrect data"
 
-    def calc(money_=money, years_=years, percent_=percent):
+    def calc(money_=float(money), years_=int(years), percent_=percent):
         money_ = money_ / 100 * percent_ + money_
         years_ -= 1
         if years_ == 0:
@@ -30,6 +30,6 @@ def deposit(money: float,
 
 
 # print(deposit(100, 1, 10))
-print(deposit(float(input("Enter a value of your deposit: ")),
-              int(input("Enter number of years: ")),
-              10))
+print(deposit(input("Enter a value of your deposit: "),
+              input("Enter number of years: "),
+              15.7))
