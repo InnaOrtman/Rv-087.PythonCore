@@ -1,8 +1,5 @@
 def bankFunction(deposit, years):
-    youWillGet = 0
-    for i in range(years):
-        percents = deposit/100*10
-        deposit = deposit + percents
-        youWillGet += deposit
+    youWillGet = deposit * (1 + 10/100)**years
+    return youWillGet
 
 print(bankFunction(1000,4))

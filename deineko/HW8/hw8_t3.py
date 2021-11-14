@@ -1,6 +1,6 @@
 def dateFunction(day, month, year):
-    longMonths = [1, 3, 5, 7, 8, 10, 12]
-    shortMonths = [4, 6, 9, 11]
+    longMonths = (1, 3, 5, 7, 8, 10, 12)
+    shortMonths = (4, 6, 9, 11)
     if year <= 1582 or month > 12:
         return False
     elif day <= 29 and month == 2 and year % 4 == 0:
