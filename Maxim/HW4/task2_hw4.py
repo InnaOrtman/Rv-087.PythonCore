@@ -7,7 +7,7 @@
 import parrPathApp
 import task3_4_hw3 as figure
 from mynum import is_number
-from mynum import is_positive_natural
+from mynum import is_positive_integer
 from mynum import if_int_to_int
 
 
@@ -26,7 +26,7 @@ def main():
                        "4 - Triangle\n"
                        "Yor choice is: ")
 
-    if not is_positive_natural(userChoise):
+    if not is_positive_integer(userChoise):
         print(incorrMess)
         return -1
 

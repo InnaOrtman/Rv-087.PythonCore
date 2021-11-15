@@ -2,13 +2,13 @@
 # The number of a place in the reserved carriage is given.
 # Determine which place it is: top or bottom, compartment or side.
 
-from mynum import is_positive_natural
+from mynum import is_positive_integer
 from mynum import if_int_to_int
 
 
 def main():
     number = input("Enter number of place: ")
-    if not is_positive_natural(number):
+    if not is_positive_integer(number):
         print("You entered not a correct number!")
         return -1
 

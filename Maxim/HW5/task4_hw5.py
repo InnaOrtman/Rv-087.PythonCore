@@ -3,13 +3,13 @@
 # The outline of the rectangle should consist of one character,
 # and "fill" - of another.
 
-from mynum import is_positive_natural
+from mynum import is_positive_integer
 
 side1 = input("Enter value of first side: ")
 side2 = input("Enter value of second side: ")
 
-if not is_positive_natural(side1) and \
-        not is_positive_natural(side2):
+if not is_positive_integer(side1) and \
+        not is_positive_integer(side2):
     print("You entered not a correct number(s)")
 else:
     side1, side2 = int(side1), int(side2)
