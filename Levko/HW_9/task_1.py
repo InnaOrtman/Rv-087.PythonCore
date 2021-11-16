@@ -9,7 +9,7 @@ class Pond(object):
 
     def __init__(self):
         self.capacity = 1
-        self.state = []
+        self.state = ""
 
     def obtainFish(self):
         self.capacity += 1
@@ -24,11 +24,11 @@ class Pond(object):
 
     def showState(self):
         if self.capacity <= 5:
-            self.state.append('poor')
+            self.state = '!poor!'
         if self.capacity > 5:
-            self.state.append('normal')
+            self.state = '!normal!'
         if self.capacity > 10:
-            self.state.append('rich')
+            self.state = '!rich!'
         print(f"🙃🙃🙃The Pond is - {self.state}🙃🙃🙃")
 
 
