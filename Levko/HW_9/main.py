@@ -7,8 +7,8 @@ from task_1 import Pond, Carp, Fish, SheatFish
 
 pond = Pond()
 fish = Fish()
-print("🙃🙃🙃HELLO🙃🙃🙃\nWelcome to the Fishing Game!\n🙃🙃🙃it is very primitive,so what:)🙃🙃🙃\nWe \
-we have a pond with only 1 fish here!")
+print("🙃🙃🙃HELLO🙃🙃🙃\nWelcome to the Fishing Game!\n🙃🙃🙃it is very primitive,so what:)🙃🙃🙃\nWe\
+ have a pond with only 1 fish here!")
 
 game_is_on = True
 while game_is_on:
