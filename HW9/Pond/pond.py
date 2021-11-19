@@ -53,7 +53,7 @@ class Pond:
         return x
 
     def show_capacity(self):
-        print(f"Fish quantity: {len(self.capacity)}. List of fish:")
+        print(f"Fish quantity: {len(self.capacity)}.\nList of fish:")
         for i in self.capacity:
             print(f"{self.capacity.index(i) + 1}: {i}")
 

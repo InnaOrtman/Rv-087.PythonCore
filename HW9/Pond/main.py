@@ -13,19 +13,14 @@ if __name__ =='__main__':
     lake = Pond()
     player = Fisherman()
 
-
-    print(len(lake.capacity))
-
-
     print("Type 1 to start game.")
     print("Type 2 to exit")
     x = int(input())
     if x == 1:
         lake = Pond()
-
     clear()
-    while x == 1:
 
+    while x == 1:
         print("\n")
         print("Type 1 to check pond status")
         print("Type 2 to add random fish to pond")
@@ -49,10 +44,10 @@ if __name__ =='__main__':
             clear()
             player.print_caught_fish_list()
         elif y == 5:
-            player.release_fish(lake)
             clear()
+            player.release_fish(lake)
         elif y == 6:
-            x == 0
+            x = 0
         stopper = 0
         while stopper != "":
             stopper = input("\npress enter to continue\n")
