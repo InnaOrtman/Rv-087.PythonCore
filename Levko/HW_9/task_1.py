@@ -51,6 +51,7 @@ class SheatFish(Fish):
     def addSheatFish(self):
         if self.whisckerLength > 6:
             self.weight = 50
+
         else:
             self.weight = 100
 

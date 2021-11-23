@@ -7,23 +7,23 @@ from task_1 import Pond, Carp, Fish, SheatFish
 
 pond = Pond()
 fish = Fish()
-print("🙃🙃🙃HELLO🙃🙃🙃\nWelcome to the Fishing Game!\n🙃🙃🙃it is very primitive,so what:)🙃🙃🙃\nWe\
- have a pond with only 1 fish here!")
+print("🙃🙃🙃HELLO🙃🙃🙃\nWelcome to the Fishing Game!\nWe \
+we have a pond with only 1 fish here!")
 
 game_is_on = True
 while game_is_on:
-    q = int(input("!!Enter the numbers according to the steps you want to perform!!\n1. View capacity;\n2. View state of Pond;\n3. Add fish( Carp or SheatFish);\n4. Catch fish (concrete instance);\n5. Create new fish (fill himself the creator)))\n6. Finish the game\n!!!Enter here - "))
-    if q == 1:
+    q = input("!!Enter the numbers according to the steps you want to perform!!\n1. View capacity;\n2. View state of Pond;\n3. Add fish( Carp or SheatFish);\n4. Catch fish (concrete instance);\n5. Create new fish (fill himself the creator)))\n6. Finish the game\n!!!Enter here - ")
+    if q == '1':
         pond.showCapacity()
-    elif q == 2:
+    elif q == '2':
         pond.showState()
-    elif q == 3:
+    elif q == '3':
         pond.obtainFish()
-    elif q == 4:
+    elif q == '4':
         pond.lostFish()
-    elif q == 5:
-        i = int(input("Enter !1! if you want to create carp to the pond and !2! if SheatFish\n!!!Enter here - "))
-        if i == 1:
+    elif q == '5':
+        i = input("Enter !1! if you want to create carp to the pond and !2! if SheatFish\n!!!Enter here - ")
+        if i == '1':
             n = int(input("Enter the color of the carp - yellow(1) or gold(2)\n!!!Enter here - "))
             if n == 1:
                 n = "yellow"
@@ -38,7 +38,7 @@ while game_is_on:
             else:
                 print("Incorrect data...")
                 break
-        elif i == 2:
+        elif i == '2':
             n = int(input("Enter enter the length (from 0 to 12) of the SheatFish mustache\n!!!Enter here - "))
             sheatfish = SheatFish(n)
             sheatfish.addSheatFish()
@@ -51,7 +51,7 @@ while game_is_on:
             pond.obtainFish()
         if s == 2:
             continue
-    elif q == 6:
+    elif q == '6':
         game_is_on = False
         pond.showCapacity()
         pond.showState()
@@ -59,4 +59,3 @@ while game_is_on:
         break
     else:
         print("Incorrect data...")
-        break
