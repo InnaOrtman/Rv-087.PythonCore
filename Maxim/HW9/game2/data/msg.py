@@ -45,3 +45,17 @@ class Msg:
 
     msgAddFishPond = "To add fish to the pond enter number of fish or " \
                      "\"q\" to back to menu: \n"
+
+    integrityViolated = "The integrity of the game is violated!\n" \
+                        "Please, reinstall the game"
+
+    unknown = "Unknown error"
+
+    notFNum = "First value must be a number"
+    notSNum = "Second value must be a number"
+
+    notAlphab = "The second value is not alphabetic"
+
+    notAlphabF = "First value is not alphabetic"
+
+    directPermiss = "Check permission on your game directory"
