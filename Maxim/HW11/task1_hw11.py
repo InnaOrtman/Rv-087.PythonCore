@@ -63,8 +63,10 @@ def calculator(numFunction: int, numArgs: tuple) -> [int, tuple]:
 
 
 def genToHundred():
-    for i in range(100):
-        yield str(i) + " ->"
+    count = -1
+    while True:
+        count += 1
+        yield str(count) + " ->"
 
 
 num = genToHundred()
@@ -77,5 +79,5 @@ print(num.__next__(), calculator(1, (10, 1, 3.2)))
 print(num.__next__(), calculator(2, (10, 1, 3.2)))
 print(num.__next__(), calculator(3, (10, 1, 3.2)))
 print(num.__next__(), calculator(4, (10,)))
-print(num.__next__(), calculator(4, (0, 1)))
-print(num.__next__(), calculator(4, (1, 0)))
+print(next(num), calculator(4, (0, 1)))
+print(next(num), calculator(4, (1, 0)))
