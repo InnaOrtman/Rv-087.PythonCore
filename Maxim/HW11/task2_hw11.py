@@ -5,6 +5,8 @@
 # create function that outputs the ingredients of each dish.
 # Create decorator that adds lettuce to all the dishes.
 
+from functools import wraps
+
 
 cheesePizza = ["Creamy garlic Parmesan sauce", "Cheese", "Toasted Parmesan"]
 pepperoniPizza = ("Marinara sauce", "Cheese", "Pepperoni")
@@ -14,6 +16,7 @@ meatPizza = ["Marinara sauce", "Pepperoni", "Italian sausage",
 
 
 def decorMashr(func):
+    @wraps(func)
     def inner(*pica):
         func(*pica)
         print("Mushrooms")
@@ -21,6 +24,7 @@ def decorMashr(func):
 
 
 def decorBasilica(func):
+    @wraps(func)
     def inner(*pica):
         func(*pica)
         print("Basilica")
@@ -28,6 +32,7 @@ def decorBasilica(func):
 
 
 def decorOlive(func):
+    @wraps(func)
     def inner(*pica):
         func(*pica)
         print("Olive")
@@ -35,29 +40,37 @@ def decorOlive(func):
 
 
 def decorTakeoutBox(func):
+    @wraps(func)
     def inner(*pica):
         func(*pica)
         print("Takeout box")
     return inner
 
 
+def decPrint(func):
+    @wraps(func)
+    def inner(*pica):
+        print("." * 35)
+        func(*pica)
+    return inner
+
+
+@decPrint
 def outputIngred(collection):
     for i in collection:
         print(i)
 
 
 print("\nPapperoni")
-print("." * 35)
 outputIngred(pepperoniPizza)
 print("\nMeat Pizza")
-print("." * 35)
 outputIngred(meatPizza)
 print("\nCheesePizza")
-print("." * 35)
 outputIngred(cheesePizza)
 print("#" * 40)
 
 
+@decPrint
 @decorMashr
 def outputIngred(collection):
     for i in collection:
@@ -65,13 +78,12 @@ def outputIngred(collection):
 
 
 print("\nPapperoni")
-print("." * 35)
 outputIngred(pepperoniPizza)
 print("\nMeat Pizza")
-print("." * 35)
 outputIngred(meatPizza)
 
 
+@decPrint
 @decorBasilica
 def outputIngred(collection):
     for i in collection:
@@ -79,10 +91,10 @@ def outputIngred(collection):
 
 
 print("\nCheese pizza")
-print("." * 35)
 outputIngred(cheesePizza)
 
 
+@decPrint
 @decorOlive
 @decorMashr
 def outputIngred(collection):
@@ -91,13 +103,12 @@ def outputIngred(collection):
 
 
 print("\nPapperoni")
-print("." * 35)
 outputIngred(pepperoniPizza)
 print("\nMeat Pizza")
-print("." * 35)
 outputIngred(meatPizza)
 
 
+@decPrint
 @decorTakeoutBox
 @decorOlive
 @decorBasilica
@@ -108,11 +119,8 @@ def outputIngred(collection):
 
 
 print("\nPapperoni")
-print("." * 35)
 outputIngred(pepperoniPizza)
 print("\nMeat Pizza")
-print("." * 35)
 outputIngred(meatPizza)
 print("\nCheese pizza")
-print("." * 35)
 outputIngred(cheesePizza)
