@@ -1,6 +1,7 @@
 import fishes
 from random import randint
 
+
 class Pond:
     def __init__(self):
         self.capacity = []
