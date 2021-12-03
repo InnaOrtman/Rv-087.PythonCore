@@ -1,4 +1,17 @@
 def calculator(arg):
+
+    def sum(a, b):
+        return a + b
+
+    def dif(a, b):
+        return a - b
+
+    def product(a, b):
+        return a * b
+
+    def fraction(a, b):
+        return a / b
+
     if arg == 1:
         return sum
     if arg == 2:
@@ -8,17 +21,7 @@ def calculator(arg):
     if arg == 4:
         return fraction
 
-def sum(a, b):
-    return a + b
 
-def dif(a, b):
-    return a - b
-
-def product(a, b):
-    return a * b
-
-def fraction(a, b):
-    return a / b
 
 
 a = calculator(1)
