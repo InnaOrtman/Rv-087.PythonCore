@@ -58,7 +58,7 @@ else:
                             raise MyErr(msgs.notAlphab)
                 except MyErr:
                     err = MyErr(msgs.notAlphab)
-                    print(err.errMsg)
+                    print(err)
                     continue
                 else:
                     print("Carp is created")
@@ -90,14 +90,14 @@ else:
                         raise MyErr(msgs.notFNum)
                 except MyErr:
                     err = MyErr(msgs.notFNum)
-                    print(err.errMsg)
+                    print(err)
                     continue
                 try:
                     if not is_number(choice[1]):
                         raise MyErr(msgs.notSNum)
                 except MyErr:
                     err = MyErr(msgs.notSNum)
-                    print(err.errMsg)
+                    print(err)
                     continue
                 else:
                     print("Sheatfish is created")
@@ -130,14 +130,14 @@ else:
                             raise MyErr(msgs.notAlphabF)
                 except MyErr:
                     err = MyErr(msgs.notAlphabF)
-                    print(err.errMsg)
+                    print(err)
                     continue
                 try:
                     if not is_number(choice[1]):
                         raise MyErr(msgs.notSNum)
                 except MyErr:
                     err = MyErr(msgs.notSNum)
-                    print(err.errMsg)
+                    print(err)
                     continue
                 else:
                     print("Fish is created")

@@ -1,6 +1,6 @@
 import unittest
 
-from Maxim.HW3 import task3_4_hw3
+import task3_4_hw3
 
 
 class TestRectangle(unittest.TestCase):

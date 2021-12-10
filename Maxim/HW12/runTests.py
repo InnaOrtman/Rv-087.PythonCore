@@ -1,4 +1,11 @@
+import os
+import sys
 import unittest
+
+# sys.path.append("/home/maxim/my/pythonCore/Rv-087.PythonCore/Maxim/HW3")
+sys.path.append("../HW3")
+# print(sys.path)
+# input()
 import tests.testRectangle as rec
 import tests.testTriangle as tri
 import tests.testSquare as sq
