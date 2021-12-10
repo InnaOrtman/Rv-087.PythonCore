@@ -1,0 +1,5 @@
+Hello {{ user[1] }}
+You You have successfully registered
+To login use:
+username: {{ user[0] }}
+password: {{ user[2] }}

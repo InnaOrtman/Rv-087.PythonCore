@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %} Readers Club - {{ book.bookname }} {% endblock %}
+
+
+{% block page_content %}
+
+{% if current_user.is_authenticated  %}
+<div class="page-header">
+    {% for index in range( number_files ): %}
+        <img src="{{ lst[index] }}" alt="" class='center-block'><br /><br /><br />
+    {% endfor %}
+{% else %}
+    {% for index in range( 25 ): %}
+        <img src="{{ lst[index] }}" alt="" class='center-block'><br /><br /><br />
+    {% endfor %}
+    <p align="center"><a href="{{ url_for('auth.login') }}"><span class="reg"> Sign in to read the whole book </span></a></p>
+</div>
+{% endif %}
+{% endblock %}

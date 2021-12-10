@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %} Readers Club {% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+    <h1>{% if current_user.is_authenticated and current_user.roleadmin == True %}
+            <a href="{{ url_for('add.addbook') }}">+ add book</a>
+        {% endif %}
+    </h1>
+</div>
+
+<div class="row">
+
+    {% for book in books %}
+        {% if loop.index % 3 == 0 %}
+            <div class="col-lg-4 col">
+                <h2>{{ book.bookname }}</h2>
+                <hr />
+                <img src="/static/books/{{ book.book_uuid }}/cover.jpg" alt="" width="40%" class="leftimg">
+                <p>{{ book.summary }}</p>
+                <p><a href="{{ book.id }}">Read book</a></p>
+            </div>
+            <div class="clearfix"></div><br /><br />
+        {% else %}
+        <div class="col-lg-4 col">
+            <h2>{{ book.bookname }}</h2>
+            <hr />
+            <img src="/static/books/{{ book.book_uuid }}/cover.jpg" alt="" width="40%" class="leftimg">
+            <p>{{ book.summary }}</p>
+            <p><a href="{{ book.id }}">Read book</a></p>
+        </div>
+        {% endif %}
+    {% endfor %}
+</div>
+
+{% endblock %}
