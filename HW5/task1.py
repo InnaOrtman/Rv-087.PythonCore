@@ -14,4 +14,3 @@ for i in range (1, 11):
         break
 else:
     print(f"It took your {i} tries, but no luck. The number was {number}.")
-
